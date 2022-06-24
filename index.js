@@ -39,7 +39,7 @@ MongoClient.connect(url).then((client) => {
 
             return client.close();
         })
-        .catch((err) => console.log(err));
+        .catch((err) => console.log(err));      // if any error
 
 })
 .catch((err) => console.log(err));
