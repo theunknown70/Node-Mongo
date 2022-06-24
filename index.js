@@ -7,7 +7,7 @@ const dbname = 'conFusion';
 
 MongoClient.connect(url).then((client) => {
 
-    console.log('Connected correctly to server');
+    console.log('Connected correctly to server');   // default
     const db = client.db(dbname);
 
     dboper.insertDocument(db, { name: "Vadonut", description: "Test"},
